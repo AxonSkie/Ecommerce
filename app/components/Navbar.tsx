@@ -1,13 +1,8 @@
 import React from "react";
 
 import { useState } from "react";
-import { useAppSelector } from "@/redux/store";
 
 function Navbar() {
-  const counter = useAppSelector(
-    (state) => state.cartReducer.value.cartCounter
-  );
-
   const [isOpen, setOpen] = useState(false);
 
   const handeClick = () => {
