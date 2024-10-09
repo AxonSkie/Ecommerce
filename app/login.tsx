@@ -2,12 +2,20 @@
 
 import React from "react";
 import { useState } from "react";
+import { logIn, logOut } from "../redux/slices/auth-slice";
+import { useDispatch } from "react-redux";
+import { AppDispatch } from "@/redux/store";
 
 function Login() {
-  const [username, setUsername] = "";
-  const onClickLogIn = () => {};
-  const onClickToggle = () => {};
-  const onClickLogOut = () => {};
+  const [username, setUsername] = useState("");
+  const dispatch = useDispatch<AppDispatch>();
+  const onClickLogIn = () => {
+    dispatch(logIn(username));
+  };
+  // const onClickToggle = () => {};
+  const onClickLogOut = () => {
+    dispatch(logOut());
+  };
 
   return (
     <div className="flex justify-center items-center w-full min-h-[300px] bg-slate-600">
@@ -15,10 +23,10 @@ function Login() {
         <div className="">
           <input type="text" onChange={(e) => setUsername(e.target.value)} />
           <br />
-          <button>Log in</button>
+          <button onClick={onClickLogIn}>Log in</button>
           <br />
 
-          <button>Log Out</button>
+          <button onClick={onClickLogOut}>Log Out</button>
           <br />
         </div>
       </div>

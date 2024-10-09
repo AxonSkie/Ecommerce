@@ -12,6 +12,17 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      
+      fontFamily: {
+        advent: ['"Advent Pro"', 'sans-serif'],
+        roboto: ['Roboto', 'sans-serif'],
+        poppins: ['Poppins' , 'sans-serif'],
+      },
+
+      primRed: {
+        primary: 'EBABAB',
+        secondary: ''
+      }
     },
   },
   plugins: [],
