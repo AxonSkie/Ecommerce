@@ -1,6 +1,5 @@
 "use client";
 
-import Login from "./login";
 import { useAppSelector } from "@/redux/store";
 import HomeCart from "./HomeCart";
 export default function Home() {
