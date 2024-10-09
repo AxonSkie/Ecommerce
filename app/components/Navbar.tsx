@@ -1,10 +1,7 @@
 import React from "react";
-import Image from "next/image";
-import Teriyaki from "@/app/public/images/Teriyaki.jpeg";
-import { cartCounter } from "@/redux/slices/cart-slice";
+
 import { useState } from "react";
 import { useAppSelector } from "@/redux/store";
-import Dropdown from "./Dropdown";
 
 function Navbar() {
   const counter = useAppSelector(

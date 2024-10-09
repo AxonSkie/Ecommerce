@@ -10,16 +10,13 @@ import {
   cartRemover,
   addQuan,
   reduceQuan,
-  discount,
 } from "@/redux/slices/cart-slice";
 import { useAppSelector } from "@/redux/store";
 import { Product } from "@/redux/slices/cart-slice";
-import Dropdown from "./components/Dropdown";
 import Image from "next/image";
 import Teriyaki from "./public/images/Teriyaki.jpeg";
 import Navbar from "./components/Navbar";
 import SecondPage from "./components/SecondPage";
-import { H1Icon } from "@heroicons/react/16/solid";
 
 function HomeCart() {
   const [isOpen, setOpen] = useState(false);
@@ -47,10 +44,6 @@ function HomeCart() {
     dispatch(reduceQuan(id));
     dispatch(cartRemover(-1));
     console.log(removeProduct(id));
-  };
-
-  const discountGift = () => {
-    dispatch(discount());
   };
 
   const handleClick = () => {
@@ -157,7 +150,7 @@ function HomeCart() {
         <div className="min-h-[300px]  flex-1 flex flex-col">
           <div className="flex-1  text-center flex flex-col justify-center">
             <div className="flex-1 flex  justify-center items-end sm:items-center">
-              <h1 className="font-poppins text-[30px]">Best Seller's!</h1>
+              <h1 className="font-poppins text-[30px]">Best Sellers!</h1>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
