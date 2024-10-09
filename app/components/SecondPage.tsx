@@ -5,7 +5,6 @@ import { discount } from "@/redux/slices/cart-slice";
 import { useDispatch } from "react-redux";
 import { AppDispatch } from "@/redux/store";
 import { useAppSelector } from "@/redux/store";
-import { Product } from "@/redux/slices/cart-slice";
 import { useState } from "react";
 
 function SecondPage() {

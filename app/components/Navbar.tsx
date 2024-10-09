@@ -18,10 +18,10 @@ function Navbar() {
   };
   return (
     <div className="w-full min-h-[100px]  overflow-hidden flex flex-col sticky z-50">
-      <div className="w-full min-h-[100px] flex bg-red-900 border-b-2 ">
+      <div className="w-full min-h-[100px] flex bg-red-900  border-b-2 ">
         <div className="flex-1 bg-red-900 flex justify-center items-center">
           <div>
-            <h1 className="text-white">Axon's Ecommerce</h1>
+            <h1 className="text-white">Axon Ecommerce</h1>
           </div>
         </div>
         <div className="flex-1  flex justify-center items-center">
